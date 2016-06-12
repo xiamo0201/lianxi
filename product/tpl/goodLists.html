@@ -1,0 +1,48 @@
+<div class="list-cn">
+	<div class="w1126">
+		<div class="crumb">
+			<span class="fs16">所有分类</span>
+			> 共30件物品
+		</div>
+		<div class="top-nav">
+			<div class="floor-{{$index+1}}" ng-repeat="data in topNavData">
+				<a class="title"> <i class="icon-nav icon-{{$index+1}}"></i>
+					<span>{{data.title}}</span>
+					<div class="bar"></div>
+				</a>
+				<ul class="list-item">
+					<li ng-repeat="list in data.subtitle">{{list}}</li>
+				</ul>
+			</div>
+		</div>
+		<div class="good-list">
+			<div class="horizontal">
+				<div class="active">综合排序</div>
+				<div>最新排序</div>
+				<div>价格</div>
+			</div>
+			<ul class="lists">
+				<li ng-repeat="list in goodlists">
+					<a href="javascript:;">
+						<div class="pic">
+							<img ng-src="{{list.src}}"/>
+						</div>
+						<div class="lt-detail">
+							<div class="lt-title">{{list.title}}</div>
+							<div>
+								<span class="gd-price">¥{{list.price}}</span>
+								<span class="pull-right">
+									<span class="glyphicon glyphicon-heart"></span>
+									{{list.collectNum}}
+								</span>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="m-pagination">
+			<uib-pagination direction-links="false" first-text="首页" last-text="末页" boundary-links="true" total-items="totalItems" ng-model="currentPage"></uib-pagination>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,9 @@
+.modal-dialog{width:500px;}
+.modal-content .input-group{margin-top:15px;}
+.modal-content .form-control{height:auto;padding:10px;}
+.modal-content .alert{padding:5px 8px;margin-bottom:0;font-size:12px;}
+.modal-content .modal-footer{text-align:center;}
+.modal-content .icon{display:inline-block;}
+.modal-content .icon img{display:inline-block;}
+.modal-content .modal-body{padding:30px;}
+

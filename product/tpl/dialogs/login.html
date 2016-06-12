@@ -1,0 +1,38 @@
+<div class="modal-header">
+	<button type="button" class="close" aria-label="Close" ng-click="close()">
+		<span>&times;</span>
+	</button>
+	<h4 class="modal-title" id="myModalLabel">账户登录</h4>
+</div>
+<div class="modal-body clearfix">
+	<div class="alert alert-warning" role="alert">请输入正确的手机号</div>
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon1">
+			<span class="glyphicon glyphicon-user"></span>
+		</span>
+		<input type="text" class="form-control" placeholder="邮箱/手机" aria-describedby="basic-addon1" required/>
+	</div>
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon1">
+			<span class="glyphicon glyphicon-lock"></span>
+		</span>
+		<input type="text" class="form-control" placeholder="密码" aria-describedby="basic-addon1" required/>
+	</div>
+	<div class="checkbox">
+		<label>
+			<input type="checkbox" value="remember-me"/>
+			记住我
+		</label>
+		<a class="pull-right ml10">忘记密码?</a>
+		<a class="pull-right pointer" ng-click="registerTo()">立即注册</a>
+	</div>
+	<button type="button" class="btn btn-success btn-lg col-xs-12">登录</button>
+</div>
+<div class="modal-footer">
+	<a class="icon mr40">
+		<img src="../resource/img/iconfont-weixin.png"/>
+	</a>
+	<a class="icon ml40">
+		<img src="../resource/img/iconfont-qq.png"/>
+	</a>
+</div>

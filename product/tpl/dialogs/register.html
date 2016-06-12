@@ -1,0 +1,45 @@
+<div class="modal-header">
+	<button type="button" class="close" aria-label="Close" ng-click="close()">
+		<span>&times;</span>
+	</button>
+	<h4 class="modal-title">用户注册</h4>
+</div>
+<div class="modal-body clearfix">
+	<div class="alert alert-warning" role="alert">请输入正确的手机号</div>
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon1">
+			<span class="glyphicon glyphicon-user"></span>
+		</span>
+		<input type="text" class="form-control" placeholder="昵称" aria-describedby="basic-addon1" required/>
+	</div>
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon1">
+			<span class="glyphicon glyphicon-earphone"></span>
+		</span>
+		<input type="text" class="form-control" placeholder="手机" aria-describedby="basic-addon1" required/>
+	</div>
+	<div class="input-group">
+		<span class="input-group-addon" id="basic-addon1">
+			<span class="glyphicon glyphicon-lock"></span>
+		</span>
+		<input type="text" class="form-control" placeholder="密码" aria-describedby="basic-addon1" required/>
+	</div>
+	<div class="input-group col-xs-7 pull-left">
+		<span class="input-group-addon" id="basic-addon1">
+			<span class="glyphicon glyphicon-ok"></span>
+		</span>
+		<input type="text" class="form-control" placeholder="密码" aria-describedby="basic-addon1" required/>
+	</div>
+	<div class="col-xs-4 pull-right mt18">
+		<button type="button" class="btn btn-default col-xs-12">点击获取验证码</button>
+	</div>
+	<div class="clearfix"></div>
+	<div class="checkbox">
+		<label>
+			<input type="checkbox" value="remember-me"/>
+			我已阅读并同意
+			<搜二平台协议></label>
+			<a class="pull-right pointer" ng-click="loginTo()">已有账号</a>
+		</div>
+		<button type="button" class="btn btn-success btn-lg col-xs-12">立即注册</button>
+	</div>
